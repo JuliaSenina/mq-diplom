@@ -525,9 +525,9 @@
     font-size: 15px;
   }
 
-  /*._hidden {
+  ._hidden {
     display: none;
-  }*/
+  }
 
   .popup {
     width: 100%;
