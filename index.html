@@ -13,6 +13,11 @@
           <div class="header-box">
             <a class="logo" href "#0"><img src="svg/noemi-logo.svg" alt="Логотип"></a>
             <nav class="menu">
+              <button class="menu-burger">
+                <div class="burger-layer"></div>
+                <div class="burger-layer"></div>
+                <div class="burger-layer"></div>
+              </button>
               <ul class="menu-list">
                 <li class="menu-list-item"><a class="menu-link" href "#0">Главная</a></li>
                 <li class="menu-list-item"><a class="menu-link" href "#0">Посты</a></li>
@@ -28,7 +33,7 @@
       </header>
       <h3 class="trends-title">Сейчас в тренде</h3>
 <section class="trends">
-	<article class="trend trend-one">
+	<article class="trend trend-interior">
         <div class="card-trend">
           <ul class="trend-list">
             <li class="trend-list-item">
@@ -43,7 +48,7 @@
             </h2>
         </div>
       </article>
-      <article class="trend trend-two">
+      <article class="trend trend-food">
         <div class="card-trend">
           <ul class="trend-list">
             <li class="trend-list-item">
@@ -55,7 +60,7 @@
             </h2>
         </div>
       </article>
-      <article class="trend trend-three">
+      <article class="trend trend-travel">
         <div class="card-trend">
           <ul class="trend-list">
             <li class="trend-list-item">
@@ -70,7 +75,7 @@
             </h2>
         </div>
       </article>
-      <article class="trend trend-four">
+      <article class="trend trend-health">
         <div class="card-trend">
           <ul class="trend-list">
             <li class="trend-list-item">
@@ -252,6 +257,7 @@
             <li class="tegs-item"><a class="tegs-items-link" href "#0">Lifestyle</a></li>
             <li class="tegs-item"><a class="tegs-items-link" href "#0">Art</a></li>
             <li class="tegs-item"><a class="tegs-items-link" href "#0">Interior</a></li>
+            <li class="tegs-item"><a class="tegs-items-link" href "#0">Trevel</a></li>
             <li class="tegs-item"><a class="tegs-items-link" href "#0">Food</a></li>
             <li class="tegs-item"><a class="tegs-items-link" href "#0">Health</a></li>
           </ul>
@@ -266,10 +272,16 @@
           </ul>
         </aside>
       </div>
+  <section class="shop">
       <h3 class="goods-title">Наши изделия</h3>
       <div class="goods">
-        <article class="product">
+        <article class="product product-pillow">
+          <picture>
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg"> 
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
             <img class="product-img" src="images/shop-item-desk1.jpg" alt="Превью товара">
+          </picture>
           <div class="product-body">
             <div class="product-content">
               <h3 class="product-title">Подушки на диван</h3>
@@ -292,8 +304,13 @@
             </footer>
           </div>
         </article>
-        <article class="product">
-          <img class="product-img" src="images/shop-item-desk2.jpg" alt="Превью товара">
+        <article class="product product-doll">
+          <picture>
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg"> 
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+            <img class="product-img" src="images/shop-item-desk2.jpg" alt="Превью товара">
+          </picture>
         <div class="product-body">
           <div class="product-content">
             <h3 class="product-title">Кукла "Зайчик"</h3>
@@ -312,8 +329,13 @@
           </footer>
         </div>
        </article>
-       <article class="product">
-        <img class="product-img" src="images/shop-item-desk3.jpg" alt="Превью товара">
+       <article class="product product-frame">
+        <picture>
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg"> 
+          <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+          <img class="product-img" src="images/shop-item-desk3.jpg" alt="Превью товара">
+        </picture>
       <div class="product-body">
         <div class="product-content">
           <h3 class="product-title">Шестиугольная рамка</h3>
@@ -337,6 +359,7 @@
       </div>
     </article>
     </div>
+  </section>
       <footer class="footer">
         <div class="articles-socials">
           <ul class="socials">
