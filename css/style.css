@@ -277,7 +277,6 @@
   .trend {
     display: flex;
     width: 24.8%;
-    max-height: 100%;
     align-items: flex-end;
     background-repeat: no-repeat;
     background-position: center center;
@@ -472,6 +471,10 @@
   .card-post-date,
   .card-post-title {
     font-size: 13px;
+  }
+
+  label {
+    width: 100%;
   }
     
   .search {
@@ -691,7 +694,6 @@
     .product-title {
       font-size: 17px;
     }
-
   }
 
   @media (min-width: 641px) and (max-width: 1199px) {
