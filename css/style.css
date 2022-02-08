@@ -20,79 +20,28 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+   
   .header-title,
-  .news-link,
-  .card-news-author,
-  .post-link,
+  .card-news-title,
   .aside-title,
-  .tegs-item,
-  .themes-item,
-  .tegs-list-item,
-  .mail-buttom,
-  .copyrihgt-text,
-  .trend-list-item,
+  .card-trend-title,
   .trends-title,
   .goods-title,
-  .product-title,
-  .product-prices,
-  .product-buttom,
-  .feedback-title,
-  .button-submit {
+  .product-title, 
+  .feedback-title {
+    text-transform: uppercase;
     font-family: opensans-bold;
   }
   
-  .menu-list-item,
-  .card-news-date,
-  .card-news-content,
-  .card-post-date,
-  .search-text,
-  .email,
-  .card-trend-title,
-  .product-description,
-  .feedback-content,
-  .option-text,
-  .option-text {
-    font-family: opensans-regular;
-  }
-  
-  .menu-list-item,
-  .header-title,
-  .card-news-title,
-  .tegs-list-item,
-  .aside-title,
-  .post-link,
-  .mail-buttom,
-  .tegs-items-link,
-  .trend-list-item,
-  .card-trend-title,
-  .trends-title,
-  .goods-title,
-  .product-title,
-  .product-prices,
-  .product-buttom, 
-  .feedback-title,
-  .button-submit {
-    text-transform: uppercase;
-  }
-  
   .menu-link,
-  .header-title,
-  .mail-buttom,
-  .trend-title-link,
-  .product-buttom,
-  .button-submit {
+  .trend-title-link {
     color: white;
   }
   
   .news-link,
-  .card-news-author,
-  .card-news-content,
   .post-link,
-  .aside-title,
   .themes-link,
-  .tegs-items-link,
-  .authors {
+  .tegs-items-link {
     color: black;
   }
   
@@ -101,9 +50,7 @@
   .tegs-items-link,
   .themes-link,
   .tegs-link,
-  .menu-link,
-  .authors,
-  .copyrights, 
+  .menu-link, 
   .trend-link,
   .trend-title-link,
   .product-link {
@@ -176,6 +123,8 @@
     padding-right: 35px;
     list-style-type: none;
     font-size: 15px;
+    text-transform: uppercase;
+    font-family: opensans-regular;
   }
   
   .menu-list-item:last-child {
@@ -190,67 +139,7 @@
     line-height: 1.4;
     padding: 100px 0 150px;
     text-align: center;
-  }
-
-  @media (max-width: 1199px) {
-    .menu-list {
-        display: none;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .menu-burger {
-        display: none;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .header {
-      background-image: url(../images/banner-mobile.jpg);
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .logo {
-      display: block;
-      width: 75%;
-      outline: none;
-      margin: 210px auto 0;
-    } 
-
-    .header-title {
-      margin: 0 auto;    
-      width: 75%;
-      font-size: 25px;
-    }
-
-    .menu-burger {
-      top: 35px;
-      right: 15px;
-    }
-  }
-
-  @media (min-width: 641px) and (max-width: 1199px) {
-    .header {
-      background-image: url(../images/banner-bg-tablet.jpg);
-      display: flex;
-    }
-  
-    .logo {
-      width: 160px;
-      outline: none;
-    } 
-
-    .header-title {
-      margin: 0 auto;    
-      width: 75%;
-      font-size: 40px;
-    }
-
-    .menu-burger {
-      top: 35px;
-      right: 15px;
-    }
+    color: white;
   }
 
   .trends-title, 
@@ -264,6 +153,7 @@
   .card-trend-title {
     font-size: 20px;
     line-height: 1.2;
+    font-family: opensans-regular;
   }
   
   .trends {
@@ -276,7 +166,10 @@
 
   .trend {
     display: flex;
-    width: 24.8%;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 24%;
     align-items: flex-end;
     background-repeat: no-repeat;
     background-position: center center;
@@ -320,39 +213,6 @@
     margin: 200px 25px 15px;
   }
 
-  @media (max-width: 640px) and (orientation: portrait) {
-    .trend {
-      width: 100%;
-    }
-
-    .trend-interior,
-    .trend-food,
-    .trend-travel {
-      margin-bottom: 3px;
-    }
-
-    .card-trend-title {
-      font-size: 17px;
-    }
-  }
-  
-  @media (max-width: 640px) and (orientation: landscape), 
-  (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
-    .trend {
-        width: 49.8%;
-        margin-bottom: 2px;
-    }
-
-    .trend-interior,
-    .trend-travel {
-        margin-right: 0.4%;
-    }
-
-    .card-trend-title {
-        font-size: 17px;
-    }
-  }
-
   .content {
     display: flex;
   }
@@ -370,14 +230,14 @@
   
   .card-news-img {
     display: block;
-    width: 49,35%;
+    width: 49%;
     padding-right: 30px;
     object-fit: contain;
   }
   
   .card-news-text {
     display: block;
-    width: 46,75%;
+    width: 47%;
   }
   
   .tegs-list, 
@@ -392,6 +252,8 @@
     padding-right: 20px;
     list-style-type: none;
     font-size: 10px;
+    text-transform: uppercase;
+    font-family: opensans-bold;
   }
   
   .card-news-title {
@@ -407,6 +269,7 @@
   .card-news-date,
   .card-post-date {
     color: #888888;
+    font-family: opensans-regular;
   }
   
   .card-news-date,
@@ -420,11 +283,19 @@
   
   .card-news-author {
     padding-left: 10px;
+    color: black;
+    font-family: opensans-bold;
+  }
+
+  .authors {
+    text-decoration: none;
+    color: black;
   }
   
-  .card-news-content,
-  .product-description {
+  .card-news-content {
     font-size: 15px;
+    color: black;
+    font-family: opensans-regular;
   }
   
   .posts {
@@ -438,6 +309,7 @@
     margin: 60px 0 40px;
     text-align: center;
     font-size: 13px;
+    color: black;
   }
   
   .aside-title::after, 
@@ -473,6 +345,11 @@
     font-size: 13px;
   }
 
+  .card-post-title {
+    text-transform: uppercase;
+    font-family: opensans-bold;
+  }
+
   label {
     width: 100%;
   }
@@ -491,6 +368,7 @@
     border: none;
     padding: 0 20px;
     font-size: 15px;
+    font-family: opensans-regular;
   }
   
   .form-hint {
@@ -522,6 +400,7 @@
     border: none;
     padding: 0 20px;
     font-size: 15px;
+    font-family: opensans-regular;
   }
   
   .mail-buttom {
@@ -533,6 +412,9 @@
     padding: 0 20px;
     font-size: 15px;
     margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: opensans-bold;
   }
   
   .tegs-link, 
@@ -549,68 +431,17 @@
   .field:focus {
     outline: 2px solid #c53b2d;
   }
+
+  .tegs-item,
+  .themes-item {
+    font-family: opensans-bold;
+  }
   
   .tegs-items {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     list-style-type: none;
-  }
-
-  @media (max-width: 640px) {
-    .content {
-      box-sizing: border-box;
-      width: 100%;
-      flex-direction: column;
-    }
-
-    .news {
-      width: 100%;
-    }
-
-    .card-news {
-      flex-direction: column;
-      padding-bottom: 20px;
-      border-bottom: 3px solid #eeeeee; 
-    }
-
-    .card-news:last-child {
-      margin-bottom: 0;
-    }
-
-    .card-news-text {
-      margin-top: 15px;
-    }
-
-    .card-news-img {
-      padding-right: 0;
-    }
-
-    .posts { 
-      width: 100%;
-      margin-left: 0;
-    }  
-  }
-
-  @media (min-width: 641px) and (max-width: 1199px) {
-    .content {
-      box-sizing: border-box;
-      width: 100%;
-      padding: 0 5%;
-    }
-
-    .card-news {
-      flex-direction: column;
-    }
-
-    .card-news-text {
-      margin-top: 15px;
-    }
-
-    .posts { 
-      margin-left: 5%;
-      width: 40%;
-    }
   }
 
   .shop {
@@ -645,6 +476,11 @@
     flex-grow: 1;
   }
 
+  .product-description {
+    font-size: 15px;
+    font-family: opensans-regular;
+  }
+
   .product-title {
     font-size: 20px;
     margin-top: 15px;
@@ -660,6 +496,8 @@
     display: flex;
     flex-direction: column;
     font-size: 20px;
+    text-transform: uppercase;
+    font-family: opensans-bold;
   }
 
   .product-price-old {
@@ -678,44 +516,9 @@
     border: none;
     padding: 0 20px;
     font-size: 15px;
-  }
-
-  @media (max-width: 640px) {
-    .goods {
-      flex-direction: column;
-      width: 100%;
-      box-sizing: border-box;
-    }
-  
-    .product-pillow, .product-doll {
-      margin-bottom: 25px;
-    }
-  
-    .product-title {
-      font-size: 17px;
-    }
-  }
-
-  @media (min-width: 641px) and (max-width: 1199px) {
-    .goods {
-      flex-wrap: wrap;
-    }
-
-    .product {
-      width: 45%;
-    }
-
-    .product-pillow, .product-doll {
-      margin-bottom: 25px;
-    }
-
-    .product-doll {
-      margin-right: 5%;
-    }
-  
-    .product-title {
-      font-size: 17px;
-    }
+    color: white;
+    text-transform: uppercase;
+    font-family: opensans-bold;
   }
 
   ._hidden {
@@ -742,6 +545,10 @@
     display: flex;
     position: relative;
     background-color: white;
+  }
+
+  .feedback-content {
+    font-family: opensans-regular;
   }
 
   .feedback-title {
@@ -772,8 +579,7 @@
     background-position: right 5px center;
   }
 
-  .checkbox-mailing, 
-  .comment-textarea {
+  .checkbox-mailing {
     margin-top: 15px;
   }
 
@@ -792,6 +598,8 @@
 
   .option-text {
     margin-left: 10px;
+    font-size: 15px;
+    font-family: opensans-regular;
   }
   
   .option:checked + .option-text::before {
@@ -813,6 +621,7 @@
     border: none;
     padding: 0 20px;
     font-size: 15px;
+    margin-top: 15px;
   }
 
   .button-submit {
@@ -823,13 +632,13 @@
     border: none;
     padding: 0 20px;
     font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-family: opensans-bold;
   }
 
   .feedback-content, 
-  .comment-textarea, 
-  .elect-item, 
-  .option-text, 
-  .option-text {
+  .select-item {
     font-size: 15px;
   }
 
@@ -853,6 +662,7 @@
     font-size: 11px;
     padding: 7px 13px;
     margin: 5px;
+    text-transform: uppercase;
   }
   
   .themes-list {
@@ -943,4 +753,203 @@
   .copyrights {
     font-size: 13px;
     color: #959595;
+    text-decoration: none;
+  }
+
+  .copyrihgt-text {
+    font-family: opensans-bold;
+  }
+
+  @media (max-width: 640px) {
+    .header {
+      background-image: url(../images/banner-mobile.jpg);
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .logo {
+      display: block;
+      width: 75%;
+      outline: none;
+      margin: 210px auto 0;
+    } 
+
+    .header-title {
+      margin: 0 auto;    
+      width: 75%;
+      font-size: 25px;
+    }
+
+    .menu-burger {
+      top: 35px;
+      right: 15px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .content {
+      box-sizing: border-box;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .news {
+      width: 100%;
+    }
+
+    .card-news {
+      flex-direction: column;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #eeeeee; 
+    }
+
+    .card-news:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-news-text {
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .card-news-img {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .posts { 
+      width: 100%;
+      margin-left: 0;
+    }  
+  }
+
+  @media (max-width: 640px) and (orientation: portrait) {
+    .trend {
+      width: 100%;
+    }
+
+    .trend-interior,
+    .trend-food,
+    .trend-travel {
+      margin-bottom: 3px;
+    }
+
+    .card-trend-title {
+      font-size: 17px;
+    }
+  }
+  
+  @media (max-width: 640px) and (orientation: landscape), 
+  (min-width: 641px) and (max-width: 1199px) {
+    .trend {
+        width: 49%;
+        margin-bottom: 2px;
+    }
+
+    .card-trend-title {
+        font-size: 17px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .goods {
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .product {
+      width: 94%;
+    }
+  
+    .product-pillow, .product-doll {
+      margin-bottom: 25px;
+    }
+  
+    .product-title {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1199px) {
+    .header {
+      background-image: url(../images/banner-bg-tablet.jpg);
+      display: flex;
+    }
+  
+    .logo {
+      width: 160px;
+      outline: none;
+    } 
+
+    .header-title {
+      margin: 0 auto;    
+      width: 75%;
+      font-size: 40px;
+    }
+
+    .menu-burger {
+      top: 35px;
+      right: 15px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1199px) {
+    .content {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 5%;
+    }
+
+    .card-news {
+      flex-direction: column;
+    }
+
+    .card-news-text {
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .card-news-img {
+      width: 100%;
+    }
+
+    .posts { 
+      margin-left: 5%;
+      width: 40%;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1199px) {
+    .goods {
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 45%;
+    }
+
+    .product-pillow, .product-doll {
+      margin-bottom: 25px;
+    }
+
+    .product-doll {
+      margin-right: 5%;
+    }
+  
+    .product-title {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .menu-list {
+        display: none;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .menu-burger {
+        display: none;
+    }
   }
